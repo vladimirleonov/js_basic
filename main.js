@@ -1,22 +1,22 @@
-let questions = ['как ваша фалилия?','как ваше имя?','как ваше отчество?'];
-let answers = [];
+let age = prompt ('сколько вам лет?', '');
 
-for (let i = 0; i < questions.length; i++) {
-    answers[i] = prompt(questions[i], '');
+if (age > 18 && age < 30) {
+    alert ('добро пожаловать!');
+} else if (age >= 30) {
+    alert('ты уже слишком взрослый');
+} else {
+    alert('тебе еще нужно подрасти');
 }
 
-console.log(answers); 
+// let age = prompt('сколько тебе лет', '');
 
-// let i = 0;
-// do {
-//     answers[i] = prompt (questions[i], '');
-//     i++;
-// } while(i < questions.length)
-// console.log (answers);
-
-// let i = 0;
-// while (i < questions.length) {
-//     answers[i] = prompt(questions[i], '');
-//     i++;
+// switch (age) {
+//     case '18': 
+//         alert ('добро пожаловать!');
+//         break;
+//     case '100': 
+//         alert('ты уже слишком большой');
+//         break;
+//     default: 
+//         alert('ты еще маленький'); 
 // }
-// console.log(answers);
